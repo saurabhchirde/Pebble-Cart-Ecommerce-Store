@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pebbleui.netlify.app/Components/components.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
             </label>
         </div>
         <div class="nav-bar-btns">
-            <a href="#"><button class="btn primary-btn-md">Login</button></a>
+            <a class="signin"><button class="btn primary-btn-md">Login</button></a>
             <div class="badge-container">
                 <button class="btn badge-icon-btn-md">
                     <i class="far fa-heart">
@@ -46,10 +46,10 @@
     </nav>
 
     <!-- signin modal -->
-    <div class="signin-modal">
+    <div class="signin-modal modal-active-shadow">
         <h1>Welcome Back</h1>
         <p>Enter your credentials to access your account</p>
-        <i class="fas fa-times"></i>
+        <a class="close-btn-modal"><i class="fas fa-times"></i></a>
         <form action="" method="post">
             <div class="outline-email-input">
                 <label for="email">
@@ -71,12 +71,12 @@
             <div class="signin-btn">
                 <button type="submit" class="btn primary-btn-md">Sign In</button>
             </div>
-            <a href="./signup.html">
+            <a href="./signup.html" class="signup">
                 <h2>Create New Account <i class="fas fa-angle-right"></i></h2>
             </a>
         </form>
     </div>
-
+    <script src="/index.js"></script>
 </body>
 
 </html>

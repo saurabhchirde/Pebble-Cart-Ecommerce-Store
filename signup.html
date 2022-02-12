@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pebbleui.netlify.app/Components/components.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,14 +46,14 @@
     </nav>
 
     <!-- signup modal one -->
-    <div class="signup-modal-one">
+    <div class="signup-modal-one modal-active-shadow">
         <h1>Sign Up</h1>
         <div class="avatar avatar-md-round">
             <img loading="lazy" src="./src/assets/images/avatar2.jpeg" alt="avatar-image" class="img-responsive" />
             <i class="fas fa-camera"></i>
         </div>
         <p>Please provide your details.</p>
-        <i class="fas fa-times"></i>
+        <a class="close-btn-modal"><i class="fas fa-times"></i></a>
         <form action="" method="post">
             <div class="outline-text-input">
                 <label for="text">Full Name
@@ -90,7 +90,7 @@
             </div>
         </form>
     </div>
-
+    <script src="/index.js"></script>
 </body>
 
 </html>
