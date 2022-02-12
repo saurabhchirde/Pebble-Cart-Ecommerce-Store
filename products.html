@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pebbleui.netlify.app/Components/components.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Pebble Cart</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="desktop-navigation-bar">
+        <a href="/">
+            <img class="logo" src="./src/assets/logo/logo.svg" alt="logo">
+        </a>
+        <div class="outline-search-input">
+            <label for="search">
+                <div class="input-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                    <input type="search" name="search" placeholder="Search" />
+                </div>
+            </label>
+        </div>
+        <div class="nav-bar-btns">
+            <button class="btn primary-btn-md">Login</button>
+            <div class="badge-container">
+                <button class="btn badge-icon-btn-md">
+                    <i class="far fa-heart">
+                        <span class="badge-on-icon">3</span>
+                    </i>
+                </button>
+            </div>
+            <div class="badge-container">
+                <button class="btn badge-icon-btn-md">
+                    <i class="fas fa-shopping-cart">
+                        <span class="badge-on-icon">12</span>
+                    </i>Cart
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- main content -->
+    <div class="grid-col-2080">
+        <form class="filter-section">
+            <div class="filter flex-row flex-justify-space-between">
+                <h2>Filter</h2>
+                <button type="reset">Clear</button>
+            </div>
+            <div class="price flex-col">
+                <h2>Price</h2>
+                <!-- range input label -->
+                <div class="price-label flex-row flex-justify-space-between">
+                    <p>
+                        <5k</p> <p>
+                            <10k</p> <p>
+                                <15k</p> <p>>20k
+                    </p>
+                </div>
+                <!-- range input field -->
+                <div class="range-input">
+                    <label for="volume"><input type="range" min="5000" max="20000" value="11000" name="volume"
+                            step="1000" oninput="vol.value = this.value" />
+                        <output id="vol">11000</output>
+                    </label>
+                </div>
+            </div>
+            <div class="brand">
+                <h2>Brand</h2>
+                <div>
+                    <!-- checkbox input field -->
+                    <div class="checkbox-input">
+                        <input type="checkbox" name="check" /><label for="check">Canon</label>
+                    </div>
+                    <!-- checkbox input field -->
+                    <div class="checkbox-input">
+                        <input type="checkbox" name="check" /><label for="check">Nikon</label>
+                    </div>
+                    <!-- checkbox input field -->
+                    <div class="checkbox-input">
+                        <input type="checkbox" name="check" checked/><label for="check">Sony</label>
+                    </div>
+                </div>
+            </div>
+            <div class="rating">
+                <h2>Ratings</h2>
+                <!-- radio input field -->
+                <div class="radio-input">
+                    <input type="radio" name="radio" /><label for="radio">4 star & above</label>
+                </div>
+                <!-- radio input field -->
+                <div class="radio-input">
+                    <input type="radio" name="radio" /><label for="radio">3 star & above</label>
+                </div>
+                <!-- radio input field -->
+                <div class="radio-input">
+                    <input type="radio" name="radio" /><label for="radio">2 star & above</label>
+                </div>
+                <!-- radio input field -->
+                <div class="radio-input">
+                    <input type="radio" name="radio" /><label for="radio">1 star & above</label>
+                </div>
+            </div>
+            <div class="sort">
+                <h2>Sort by</h2>
+                <!-- radio input field -->
+                <div class="radio-input">
+                    <input type="radio" name="sort" /><label for="radio">Price - Low to High</label>
+                </div>
+                <!-- radio input field -->
+                <div class="radio-input">
+                    <input type="radio" name="sort" /><label for="radio">Price - High to Low</label>
+                </div>
+            </div>
+        </form>
+        <section class="products">
+            <h1>Showing All Products</h1>
+            <div class="flex-row flex-wrap">
+                <!-- vertical light card -->
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md"  >
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md ">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-vertical card-light">
+                    <div class="card-img-container">
+                        <img src="./src/assets/images/71bCLcUXhJL._AC_UY218_.png" alt="product-image" />
+                    </div>
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
+                            Shoot Camera (Black) with 8X Optical Zoom</h1>
+                        <h2 class="card-price">10,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
