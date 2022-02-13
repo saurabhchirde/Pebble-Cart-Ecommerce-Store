@@ -1,13 +1,78 @@
+/* landing page */
+
+.body-landing-page,
+.dark-nav-bar,
+.dark-nav-bar input[type="search"] {
+    background-color: rgb(38, 38, 38);
+}
+
+.dark-nav-bar input[type="search"] {
+    color: var(--text-white);
+}
+
+.dark-nav-bar>div div>a>i,
+.dark-nav-bar>.nav-bar-btns>a>div>button,
+.dark-nav-bar i {
+    color: var(--text-white);
+}
+
+.body-landing-page>.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem 2rem;
+    height: 70vh;
+}
+
+.hero-section>div>h1 {
+    font-size: 4rem;
+    color: var(--text-white);
+}
+
+.hero-section>div>p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    line-height: 2.3rem;
+    color: var(--text-light);
+}
+
+.hero-section>div button {
+    margin: 1rem 0 0 -0.8rem;
+    font-size: 1.4rem;
+}
+
+.hero-section>img {
+    width: 30rem;
+    margin: auto;
+}
+
+.up-btn-dark-bg {
+    box-shadow: none;
+}
+
+.categories > a > div:hover {
+    background-color: var(--dark-gray);
+    cursor: pointer;
+}
+
+.signup {
+    cursor: pointer;
+}
+
 /* product page */
 
 .filter-section,
-.products{
+.products,
+.wishlist,
+.cart,
+.similar-products {
     padding: 2rem 1.5rem 1.5rem;
-    position: sticky;
-    top: 3.95rem;
 }
 
 .filter-section {
+    position: sticky;
+    top: 3.97rem;
     padding-top: 0;
     margin-top: 0;
     max-width: 15.5rem;
@@ -19,7 +84,7 @@
     width: 0;
 }
 
-.products > h1 {
+.products>h1 {
     padding-left: 1rem;
 }
 
@@ -27,42 +92,42 @@ button {
     cursor: pointer;
 }
 
-form > div {
+form>div {
     margin: 2rem 0;
 }
 
-form  > div > div > div label{
+form>div>div>div label {
     font-size: 0.1rem;
 }
 
-form > div > h2,
-.products h1 {
+form>div>h2,
+.products>h1 {
     font-size: 1rem;
     margin-bottom: 0.6rem;
 }
 
-.price > div {
+.price>div {
     margin-bottom: -0.6rem;
     font-size: 0.9rem;
     color: var(--text-light);
     width: 12rem;
 }
 
-form .price-label{
+form .price-label {
     margin-top: 0.6rem;
     max-width: 100%;
 }
 
-.price > .range-input,
-.brand > div > div,
-.rating > div,
-.sort > div {
+.price>.range-input,
+.brand>div>div,
+.rating>div,
+.sort>div {
     width: 100%;
     margin-left: 0;
 }
 
-form > .filter > h2,
-form > div > button {
+form>.filter>h2,
+form>div>button {
     padding: 0.3rem auto;
     font-size: 1rem;
     border: none;
@@ -70,11 +135,133 @@ form > div > button {
     color: var(--text-dark);
 }
 
-form > div > button{
+form>div>button {
     text-decoration: underline;
     align-self: flex-start;
 }
 
 .modal-active-shadow {
     box-shadow: 0 0 0 300rem rgba(0, 0, 0, 0.7);
+}
+
+/* cart */
+
+.cart {
+    background-color: var(--light-gray);
+    height: 90vh;
+}
+
+.cart>h1,
+.wishlist>h1,
+.similar-products>h1 {
+    color: var(--text-light);
+}
+
+.cart>div {
+    width: 90%;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+
+.cart-products {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cart-price-table {
+    position: sticky;
+    margin-top: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    max-width: 21rem;
+    align-self: flex-start;
+    background-color: var(--primary-bg);
+    border-radius: 4px;
+}
+
+.cart-price-table>h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.cart-price-table>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-price-table h3 {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin: 0.25rem 0;
+}
+
+.cart-price,
+.cart-discount {
+    margin: 0.3rem 0;
+}
+
+.cart-coupon {
+    margin: 0.9rem 0 1rem;
+}
+
+.cart-total>h3 {
+    color: var(--text-dark);
+    font-weight: bold;
+    margin: 0.4rem 0;
+}
+
+.cart-coupon>h3 {
+    width: 55%;
+    font-size: 0.9rem;
+    padding: 0 0.4rem 0 0;
+}
+
+.cart-coupon-apply {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-coupon-apply>button {
+    font-size: 0.8rem;
+    margin-right: 0;
+}
+
+.cart-coupon-apply>input {
+    height: 2rem;
+    width: 50%;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    padding: 0 0.5rem;
+    color: var(--text-light);
+}
+
+.cart-price-table .cart-btns {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0;
+}
+
+.cart-btns>button {
+    margin: 0.5rem 0;
+}
+
+/* similar products */
+
+.similar-products>h1 {
+    margin-left: 1rem;
+}
+
+.similar-products>div {
+    flex-wrap: wrap;
+}
+
+.similar-products>div>div {
+    min-width: 14rem;
 }
