@@ -23,3 +23,11 @@ loginBtn.forEach(btn=>btn.addEventListener("click",showLoginModal));
 createAccBtn.forEach(btn=>btn.addEventListener("click",showSignupModal));
 
 modalCloseBtn.forEach(btn=>btn.addEventListener("click",closeAllModal));
+
+document.querySelector(".show-filter-section-btn").addEventListener("click",()=>{
+    document.querySelector(".filter-section").style.display="inline";
+})
+
+document.querySelector(".filter-close-btn").addEventListener("click",()=>{
+    document.querySelector(".filter-section").style.display="none";
+})

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://pebbleui.netlify.app/Components/components.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +25,42 @@
     <nav class="desktop-navigation-bar dark-nav-bar">
         <a href="/">
             <img class="logo" src="./src/assets/logo/logo-light.svg" alt="logo">
+        </a>
+        <div class="outline-search-input">
+            <label for="search">
+                <div class="input-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                    <input type="search" name="search" placeholder="Search" />
+                </div>
+            </label>
+        </div>
+        <div class="nav-bar-btns">
+            <a class="signin"><button class="btn primary-btn-md">Login</button></a>
+            <a href="./wishlist.html">
+                <div class="badge-container">
+                    <button class="btn badge-icon-btn-md">
+                        <i class="far fa-heart">
+                            <span class="badge-on-icon">3</span>
+                        </i>
+                    </button>
+                </div>
+            </a>
+            <a href="./cart.html">
+                <div class="badge-container">
+                    <button class="btn badge-icon-btn-md">
+                        <i class="fas fa-shopping-cart">
+                            <span class="badge-on-icon">1</span>
+                        </i> Cart
+                    </button>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- navigation bar -->
+    <nav class="mobile-navigation-bar dark-nav-bar">
+        <a href="/">
+            <img class="logo" src="./src/assets/logo/icon.svg" alt="logo">
         </a>
         <div class="outline-search-input">
             <label for="search">
@@ -126,7 +162,7 @@
                 <a href="/products.html">
                     <div class="card-vertical-info card-dark">
                         <div class="card-img-container">
-                            <img src="/src/assets/images/sony-camera.webp" alt="product-image" />
+                            <img src="/src/assets/images/sony-camera.webp" alt="product-image" loading="lazy"/>
                         </div>
                         <div class="card-text">
                             <h1>Mirrorless Cameras</h1>
@@ -137,7 +173,7 @@
                 <a href="/products.html">
                     <div class="card-vertical-info card-dark">
                         <div class="card-img-container">
-                            <img src="/src/assets/images/action-camera.png" alt="product-image" />
+                            <img src="/src/assets/images/action-camera.png" alt="product-image" loading="lazy"/>
                         </div>
                         <div class="card-text">
                             <h1>Action Cameras</h1>
@@ -148,7 +184,7 @@
                 <a href="/products.html">
                     <div class="card-vertical-info card-dark">
                         <div class="card-img-container">
-                            <img src="/src/assets/images/polaroid-camera.png" alt="product-image" />
+                            <img src="/src/assets/images/polaroid-camera.png" alt="product-image" loading="lazy"/>
                         </div>
                         <div class="card-text">
                             <h1>Polaroid Cameras</h1>
@@ -214,7 +250,7 @@
     <div class="signup-modal-one modal-active-shadow hide">
         <h1>Sign Up</h1>
         <div class="avatar avatar-md-round">
-            <img loading="lazy" src="./src/assets/images/avatar1.webp" alt="avatar-image" class="img-responsive" />
+            <img loading="lazy" src="./src/assets/images/avatar1.webp" alt="avatar-image" class="img-responsive"/>
             <i class="fas fa-camera"></i>
         </div>
         <p>Please provide your details.</p>

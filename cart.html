@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://pebbleui.netlify.app/Components/components.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,6 +57,42 @@
         </div>
     </nav>
 
+    <!-- navigation bar -->
+    <nav class="mobile-navigation-bar dark-nav-bar">
+        <a href="/">
+            <img class="logo" src="./src/assets/logo/icon.svg" alt="logo">
+        </a>
+        <div class="outline-search-input">
+            <label for="search">
+                <div class="input-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                    <input type="search" name="search" placeholder="Search" />
+                </div>
+            </label>
+        </div>
+        <div class="nav-bar-btns">
+            <a class="signin"><button class="btn primary-btn-md">Login</button></a>
+            <a href="./wishlist.html">
+                <div class="badge-container">
+                    <button class="btn badge-icon-btn-md">
+                        <i class="far fa-heart">
+                            <span class="badge-on-icon">3</span>
+                        </i>
+                    </button>
+                </div>
+            </a>
+            <a href="./cart.html">
+                <div class="badge-container">
+                    <button class="btn badge-icon-btn-md">
+                        <i class="fas fa-shopping-cart">
+                            <span class="badge-on-icon">1</span>
+                        </i> Cart
+                    </button>
+                </div>
+            </a>
+        </div>
+    </nav>
+
     <section class="cart">
         <h1 class="title-xl-wt-5 mg-2-bot text-center">Shopping Cart</h1>
 
@@ -69,7 +105,7 @@
                     <button class="btn primary-text-btn-sm icon-lg cart-wishlist-icon">
                         <i class="far fa-heart"></i></button>
                     <div class="card-img-container">
-                        <img src="./src/assets/images/polaroid-camera.png" alt="product-image" />
+                        <img src="./src/assets/images/polaroid-camera.png" class="img-responsive" alt="product-image" loading="lazy"/>
                     </div>
                     <div class="card-body">
                         <div class="card-text">
@@ -142,7 +178,7 @@
                     <h2>10% OFF</h2>
                 </div>
                 <div class="card-img-container">
-                    <img src="./src/assets/images/sony-camera.png" />
+                    <img src="./src/assets/images/sony-camera.png" loading="lazy" alt="product-image"/>
                 </div>
                 <div class="card-text">
                     <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
@@ -169,7 +205,7 @@
                     <h2>New Arrival</h2>
                 </div>
                 <div class="card-img-container">
-                    <img src="./src/assets/images/sony-camera.png" />
+                    <img src="./src/assets/images/sony-camera.png" loading="lazy" alt="product-image"/>
                 </div>
                 <div class="card-text">
                     <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
@@ -196,7 +232,7 @@
                     <h2>New Arrival</h2>
                 </div>
                 <div class="card-img-container">
-                    <img src="./src/assets/images/sony-camera.png" />
+                    <img src="./src/assets/images/sony-camera.png" loading="lazy" alt="product-image"/>
                 </div>
                 <div class="card-text">
                     <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
@@ -223,7 +259,7 @@
                     <h2>20% OFF</h2>
                 </div>
                 <div class="card-img-container">
-                    <img src="./src/assets/images/sony-camera.png" />
+                    <img src="./src/assets/images/sony-camera.png" loading="lazy" alt="product-image"/>
                 </div>
                 <div class="card-text">
                     <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
@@ -250,7 +286,7 @@
                     <h2>5% OFF</h2>
                 </div>
                 <div class="card-img-container">
-                    <img src="./src/assets/images/sony-camera.png" />
+                    <img src="./src/assets/images/sony-camera.png" loading="lazy" alt="product-image"/>
                 </div>
                 <div class="card-text">
                     <h1 class="card-title title-sm">Sony DSC W830 Cyber-Shot 20.1 MP Point and
