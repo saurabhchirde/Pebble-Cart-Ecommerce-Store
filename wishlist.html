@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/logo/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/logo/favicon/favicon-16x16.png">
     <link rel="manifest" href="/src/assets/logo/favicon/site.webmanifest">
-    <title>Home | Pebble Cart</title>
+    <title>Wishlist | Pebble Cart</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         </div>
         <div class="nav-bar-btns">
             <a class="signin"><button class="btn primary-btn-md">Login</button></a>
-            <a href="./wishlist.html">
+            <a href="#">
                 <div class="badge-container">
                     <button class="btn badge-icon-btn-md">
                         <i class="far fa-heart">
@@ -93,126 +93,90 @@
         </div>
     </nav>
 
-    <section class="landing-page-content">
-        <div class="hero-section">
-            <div class="hero-banner">
-                <div>
-                    <h1>Simply the better Camera you are looking for.</h1>
-                    <p>When you are ready for more, there is a camera waiting for you that is easy to carry but shoots
-                        like
-                        a pro</p>
-                    <a href="./products.html"><button class="btn primary-text-btn-lg">Shop Now</button></a>
+    <section class="wishlist">
+        <h1 class="title-xl-wt-5 mg-2-bot text-center">My Wishlist</h1>
+        <div class="flex-row-center flex-wrap">
+
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-dark">
+                <div class="card-img-container">
+                    <img src="./src/assets/images/action-camera.png" alt="product-image" loading="lazy"/>
                 </div>
-                <img src="/src/assets/images/sony-camera.webp" alt="image" loading="lazy" class="img-responsive" />
-            </div>
-
-            <div class="hero-categories flex-row-center pd-2-tb">
-                <!-- vertical dark card -->
-                <a href="/products.html">
-                    <div class="card-vertical-info card-dark">
-                        <div class="card-img-container">
-                            <img src="/src/assets/images/camera.png" alt="product-image" />
-                        </div>
-                        <div class="card-text">
-                            <h1>Cameras</h1>
+                <div class="card-body">
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">GoPro HERO10 Black - Front LCD and Touch Rear Screens,23MP. </h1>
+                        <h2 class="card-price">54,490/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-to-cart">Move to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </a>
-                <!-- vertical dark card -->
-                <a href="/products.html">
-                    <div class="card-vertical-info card-dark">
-                        <div class="card-img-container">
-                            <img src="/src/assets/images/lens.png" alt="product-image" />
-                        </div>
-                        <div class="card-text">
-                            <h1>Lenses</h1>
-                        </div>
-                    </div>
-                </a>
-                <!-- vertical dark card -->
-                <a href="/products.html">
-                    <div class="card-vertical-info card-dark">
-                        <div class="card-img-container">
-                            <img src="/src/assets/images/tripod.png" alt="product-image" />
-                        </div>
-                        <div class="card-text">
-                            <h1>Tripods</h1>
-                        </div>
-                    </div>
-                </a>
-                <!-- vertical dark card -->
-                <a href="/products.html">
-                    <div class="card-vertical-info card-dark">
-                        <div class="card-img-container">
-                            <img src="/src/assets/images/accessories.png" alt="product-image" />
-                        </div>
-                        <div class="card-text">
-                            <h1>Accessories</h1>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-
-        <div class="hot-new-products pd-2-tb">
-            <h1>Hot New Products</h1>
-            <div class="flex-row-center">
-                <!-- vertical dark card -->
-                <a href="/products.html">
-                    <div class="card-vertical-info card-dark">
-                        <div class="card-img-container">
-                            <img src="/src/assets/images/sony-camera.webp" alt="product-image" loading="lazy"/>
-                        </div>
-                        <div class="card-text">
-                            <h1>Mirrorless Cameras</h1>
-                        </div>
-                    </div>
-                </a>
-                <!-- vertical dark card -->
-                <a href="/products.html">
-                    <div class="card-vertical-info card-dark">
-                        <div class="card-img-container">
-                            <img src="/src/assets/images/action-camera.png" alt="product-image" loading="lazy"/>
-                        </div>
-                        <div class="card-text">
-                            <h1>Action Cameras</h1>
-                        </div>
-                    </div>
-                </a>
-                <!-- vertical dark card -->
-                <a href="/products.html">
-                    <div class="card-vertical-info card-dark">
-                        <div class="card-img-container">
-                            <img src="/src/assets/images/polaroid-camera.png" alt="product-image" loading="lazy"/>
-                        </div>
-                        <div class="card-text">
-                            <h1>Polaroid Cameras</h1>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-            <div class="hot-new-slider-dots flex-row-center">
-                <i class="fas fa-circle"></i>
-                <i class="far fa-circle"></i>
-                <i class="far fa-circle"></i>
-            </div>
-        </div>
-
-        <div class="landing-recommended-section">
-            <div class="recommended-banner">
-                <div>
-                    <p>Recommended for you </p>
-                    <h1>Canon EOS 6D DSLR Camera (Kit 24 - 105) (Black).</h1>
-                    <p>Light weight, full-frame DSLR, fitted with a 20.2 megapixel CMOS sensor, 11-point AutoFocus system and built-in GPS and Wi-Fi support. Designed for professional still photographers.</p>
-                    <a href="./products.html"><button class="btn primary-btn-md">Shop Now</button></a>
-                    <a href="./products.html"><button class="btn primary-text-btn-md">Read more</button></a>
                 </div>
-                <img src="/src/assets/images/canon6d-camera.webp" alt="image" loading="lazy" class="img-responsive" />
             </div>
-        </div>
 
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-dark">
+                <div class="card-img-container">
+                    <img src="./src/assets/images/camera-canon.png" alt="product-image" loading="lazy"/>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                            (Black) with EF S18-55 is II Lens</h1>
+                        <h2 class="card-price">35,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-to-cart">Move to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- horizontal light card -->
+            <div class="card-horizontal card-dark">
+                <div class="card-img-container">
+                    <img src="./src/assets/images/camera-canon.png" alt="product-image" loading="lazy"/>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <h1 class="card-title title-sm">Canon EOS 1500D 24.1 Digital SLR Camera
+                            (Black) with EF S18-55 is II Lens</h1>
+                        <h2 class="card-price">35,999/-</h2>
+                    </div>
+                    <div class="card-nav">
+                        <div class="card-cta-btn">
+                            <button class="btn primary-btn-sm add-to-cart">Move to Cart</button>
+                            <div class="card-nav-icon">
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn primary-text-btn-sm icon-md">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- signin modal -->
@@ -250,7 +214,7 @@
     <div class="signup-modal-one modal-active-shadow hide">
         <h1>Sign Up</h1>
         <div class="avatar avatar-md-round">
-            <img loading="lazy" src="./src/assets/images/avatar1.webp" alt="avatar-image" class="img-responsive"/>
+            <img loading="lazy" src="./src/assets/images/avatar1.webp" alt="avatar-image" class="img-responsive" />
             <i class="fas fa-camera"></i>
         </div>
         <p>Please provide your details.</p>
