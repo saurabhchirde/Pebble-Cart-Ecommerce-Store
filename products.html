@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <!-- floating cart icon button -->
-    <a href="#"><button class="btn floating-btn-md up-btn-dark-bg">
+    <!-- floating up-arrow icon button -->
+    <a href="#" class="float-up-btn"><button class="btn floating-btn-md float-btn-dark-bg">
             <i class="fas fa-arrow-up"></i></button>
     </a>
+
     <!-- navigation bar -->
     <nav class="desktop-navigation-bar dark-nav-bar">
         <a href="/">
@@ -57,7 +58,7 @@
         </div>
     </nav>
 
-    <!-- navigation bar -->
+    <!-- mobile navigation bar -->
     <nav class="mobile-navigation-bar dark-nav-bar">
         <a href="/">
             <img class="logo" src="./src/assets/logo/icon.svg" alt="logo">
@@ -72,25 +73,34 @@
         </div>
         <div class="nav-bar-btns">
             <a class="signin"><button class="btn primary-btn-md">Login</button></a>
-            <a href="./wishlist.html">
-                <div class="badge-container">
-                    <button class="btn badge-icon-btn-md">
-                        <i class="far fa-heart">
-                            <span class="badge-on-icon">3</span>
-                        </i>
-                    </button>
-                </div>
-            </a>
-            <a href="./cart.html">
-                <div class="badge-container">
-                    <button class="btn badge-icon-btn-md">
-                        <i class="fas fa-shopping-cart">
-                            <span class="badge-on-icon">1</span>
-                        </i> Cart
-                    </button>
-                </div>
-            </a>
         </div>
+    </nav>
+
+    <!-- bottom nav -->
+    <nav class="mobile-navigation-bar-bottom dark-nav-bar">
+        <a href="./wishlist.html">
+            <div class="badge-container">
+                <button class="btn badge-icon-btn-md">
+                    <i class="far fa-heart">
+                        <span class="badge-on-icon">3</span>
+                    </i>
+                </button>
+            </div>
+        </a>
+        <a href="./index.html">
+            <button class="btn icon-btn-md">
+                <i class="fas fa-house-user"></i>
+            </button>
+        </a>
+        <a href="./cart.html">
+            <div class="badge-container">
+                <button class="btn badge-icon-btn-md">
+                    <i class="fas fa-shopping-cart">
+                        <span class="badge-on-icon">1</span>
+                    </i>
+                </button>
+            </div>
+        </a>
     </nav>
 
     <!-- main content -->
@@ -246,28 +256,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical card-dark">
-                    <div class="card-img-container">
-                        <img src="./src/assets/images/sony-camera.png" alt="product-image" loading="lazy" />
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text">
-                            <h1 class="card-title">Sony DSC W830 Cyber-Shot 20.1 MP Point & Shoot Camera</h1>
-                            <h2 class="card-price">10,999/-</h2>
+                <div class="card-vertical-overlay card-dark">
+                    <div class="card-content">
+                        <div class="card-img-container">
+                            <img src="./src/assets/images/sony-camera.png" alt="product-image" loading="lazy" />
                         </div>
-                        <div class="card-nav">
-                            <div class="card-cta-btn">
-                                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div class="card-nav-icon">
-                                    <button class="btn primary-text-btn-sm icon-md">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="btn primary-text-btn-sm icon-md ">
-                                        <i class="fas fa-share-alt"></i>
-                                    </button>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h1 class="card-title">Sony DSC W830 Cyber-Shot 20.1 MP Point & Shoot Camera</h1>
+                                <h2 class="card-price">10,999/-</h2>
+                            </div>
+                            <div class="card-nav">
+                                <div class="card-cta-btn">
+                                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                                    <div class="card-nav-icon">
+                                        <button class="btn primary-text-btn-sm icon-md">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                        <button class="btn primary-text-btn-sm icon-md ">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="overlay-area-type-1">
+                        <h1 class="card-title">SOLD OUT</h1>
                     </div>
                 </div>
                 <div class="card-vertical card-dark">
@@ -390,28 +405,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-vertical card-dark">
-                    <div class="card-img-container">
-                        <img src="./src/assets/images/sony-camera.png" alt="product-image" loading="lazy" />
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text">
-                            <h1 class="card-title">Sony DSC W830 Cyber-Shot 20.1 MP Point & Shoot Camera</h1>
-                            <h2 class="card-price">10,999/-</h2>
+                <div class="card-vertical-overlay card-dark">
+                    <div class="card-content">
+                        <div class="card-img-container">
+                            <img src="./src/assets/images/sony-camera.png" alt="product-image" loading="lazy" />
                         </div>
-                        <div class="card-nav">
-                            <div class="card-cta-btn">
-                                <button class="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div class="card-nav-icon">
-                                    <button class="btn primary-text-btn-sm icon-md">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="btn primary-text-btn-sm icon-md ">
-                                        <i class="fas fa-share-alt"></i>
-                                    </button>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h1 class="card-title">Sony DSC W830 Cyber-Shot 20.1 MP Point & Shoot Camera</h1>
+                                <h2 class="card-price">10,999/-</h2>
+                            </div>
+                            <div class="card-nav">
+                                <div class="card-cta-btn">
+                                    <button class="btn primary-btn-sm add-cart">Add to Cart</button>
+                                    <div class="card-nav-icon">
+                                        <button class="btn primary-text-btn-sm icon-md">
+                                            <i class="far fa-heart"></i>
+                                        </button>
+                                        <button class="btn primary-text-btn-sm icon-md ">
+                                            <i class="fas fa-share-alt"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="overlay-area-type-1">
+                        <h1 class="card-title">SOLD OUT</h1>
                     </div>
                 </div>
                 <div class="card-vertical card-dark">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://pebbleui.com/components/v1.0.0/components.css"/>
+    <link rel="stylesheet" href="https://pebbleui.com/components/v1.0.0/components.css" />
     <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <!-- floating cart icon button -->
-    <a href="#"><button class="btn floating-btn-md up-btn-dark-bg">
+    <!-- floating up-arrow icon button -->
+    <a href="#" class="float-up-btn"><button class="btn floating-btn-md float-btn-dark-bg">
             <i class="fas fa-arrow-up"></i></button>
     </a>
+
     <!-- navigation bar -->
     <nav class="desktop-navigation-bar dark-nav-bar">
         <a href="/">
@@ -57,7 +58,7 @@
         </div>
     </nav>
 
-    <!-- navigation bar -->
+    <!-- mobile navigation bar -->
     <nav class="mobile-navigation-bar dark-nav-bar">
         <a href="/">
             <img class="logo" src="./src/assets/logo/icon.svg" alt="logo">
@@ -72,25 +73,34 @@
         </div>
         <div class="nav-bar-btns">
             <a class="signin"><button class="btn primary-btn-md">Login</button></a>
-            <a href="./wishlist.html">
-                <div class="badge-container">
-                    <button class="btn badge-icon-btn-md">
-                        <i class="far fa-heart">
-                            <span class="badge-on-icon">3</span>
-                        </i>
-                    </button>
-                </div>
-            </a>
-            <a href="./cart.html">
-                <div class="badge-container">
-                    <button class="btn badge-icon-btn-md">
-                        <i class="fas fa-shopping-cart">
-                            <span class="badge-on-icon">1</span>
-                        </i> Cart
-                    </button>
-                </div>
-            </a>
         </div>
+    </nav>
+
+    <!-- bottom nav -->
+    <nav class="mobile-navigation-bar-bottom dark-nav-bar">
+        <a href="./wishlist.html">
+            <div class="badge-container">
+                <button class="btn badge-icon-btn-md">
+                    <i class="far fa-heart">
+                        <span class="badge-on-icon">3</span>
+                    </i>
+                </button>
+            </div>
+        </a>
+        <a href="#">
+            <button class="btn icon-btn-md">
+                <i class="fas fa-house-user"></i>
+            </button>
+        </a>
+        <a href="./cart.html">
+            <div class="badge-container">
+                <button class="btn badge-icon-btn-md">
+                    <i class="fas fa-shopping-cart">
+                        <span class="badge-on-icon">1</span>
+                    </i>
+                </button>
+            </div>
+        </a>
     </nav>
 
     <section class="landing-page-content">

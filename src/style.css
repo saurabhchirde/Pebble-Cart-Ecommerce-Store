@@ -25,7 +25,8 @@ body,
     color: var(--sub-title-color);
 }
 
-.mobile-navigation-bar {
+.mobile-navigation-bar,
+.mobile-navigation-bar-bottom {
     display: none;
 }
 
@@ -122,7 +123,7 @@ footer {
     font-weight: 500;
 }
 
-.up-btn-dark-bg {
+.float-btn-dark-bg {
     box-shadow: none;
 }
 
@@ -483,6 +484,10 @@ h3 {
     opacity: 0.4;
 }
 
+.float-up-btn {
+    display: flex;
+}
+
 /* all scrollbar */
 
 * {
@@ -698,27 +703,67 @@ h3 {
 }
 
 @media screen and (max-width:580px) {
-    .outline-search-input {
-        display: none;
-    }
 
     .desktop-navigation-bar {
         display: none;
     }
 
-    .mobile-navigation-bar {
+    .mobile-navigation-bar,
+    .mobile-navigation-bar-bottom {
         padding: 0.4rem 0.6rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: sticky;
+        width: 100%;
+        position: fixed;
         top: 0;
         z-index: 3;
+    }
+
+    .mobile-navigation-bar .outline-search-input {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .mobile-navigation-bar-bottom {
+        top: 100%;
+        justify-content: space-around;
+        transform: translate(0, -100%);
     }
 
     .mobile-navigation-bar a>img {
         width: 2rem;
         margin-left: 0.5rem;
+    }
+
+    .landing-page-content {
+        margin-top: 5rem;
+    }
+
+    .wishlist,
+    .cart {
+        margin-top: 4.3rem;
+    }
+
+    .product-page-main {
+        margin-top: 2.3rem;
+    }
+
+    .filter-section {
+        height: 85vh;
+    }
+
+    .cart>h1,
+    .wishlist>h1,
+    .similar-products>h1,
+    .product-page-main>.products>h1 {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    footer {
+        margin-bottom: 3rem;
     }
 
     .hero-banner,
@@ -775,8 +820,6 @@ h3 {
         font-size: 0.9rem;
     }
 
-    /* all vertical cards */
-
     .products,
     .wishlist,
     .similar-products,
@@ -789,10 +832,16 @@ h3 {
         margin: 0.3rem auto;
     }
 
-    .card-vertical {
+    .card-vertical,
+    .card-vertical-overlay>.card-content {
+        display: flex;
         flex-direction: row;
-        width: auto;
-        height: auto;
+    }
+
+    .card-vertical,
+    .card-vertical-overlay {
+        width: 100%;
+        height: 100%;
     }
 
     /* cart */
@@ -863,5 +912,17 @@ h3 {
 
     .footer-copyright-text>div h2 {
         margin-left: 0.6rem;
+    }
+
+    .float-up-btn {
+        display: none;
+    }
+
+    .float-cart-btn {
+        display: flex;
+    }
+
+    .float-cart-btn button {
+        padding: 1rem 0.9rem;
     }
 }
