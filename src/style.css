@@ -1,7 +1,7 @@
 :root {
     --dark-bg-color: #111213;
     --secondary-dark-bg: #18191a;
-    --dark-theme-card-bg: #242729;
+    --dark-theme-card-bg: #1a1b1c;
     --dark-theme-card-hover: rgba(40, 40, 40, 0.666);
     --title-color: #dedede;
     --sub-title-color: #c9c9c9;
@@ -473,6 +473,16 @@ h3 {
     margin-left: 1rem;
 }
 
+.section-break-line {
+    width: 70%;
+    margin: auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--text-lighter);
+    opacity: 0.4;
+}
+
 /* all scrollbar */
 
 * {
@@ -620,6 +630,10 @@ h3 {
         width: 13rem;
     }
 
+    .hot-new-products .card-text h1 {
+        font-size: 1rem;
+    }
+
     .show-filter-section-btn,
     .filter-close-btn {
         display: flex;
@@ -710,7 +724,8 @@ h3 {
     .hero-banner,
     .recommended-banner {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 1.5rem;
     }
 
     .hero-banner h1 {
@@ -718,15 +733,20 @@ h3 {
     }
 
     .recommended-banner h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
-    .hero-banner>img {
-        max-width: 20rem;
+    .hero-banner img,
+    .recommended-banner img {
+        margin: auto auto 1rem;
+    }
+
+    .hero-banner img {
+        max-width: 17rem;
     }
 
     .recommended-banner img {
-        max-width: 10rem;
+        max-width: 12rem;
     }
 
     /* categories */
@@ -747,8 +767,32 @@ h3 {
     }
 
     .hot-new-products a>div {
-        height: 10rem;
-        width: 10rem;
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .hot-new-products .card-text h1 {
+        font-size: 0.9rem;
+    }
+
+    /* all vertical cards */
+
+    .products,
+    .wishlist,
+    .similar-products,
+    .cart {
+        padding: 1rem 0.2rem;
+    }
+
+    .products>div>div,
+    .similar-products>div>div {
+        margin: 0.3rem auto;
+    }
+
+    .card-vertical {
+        flex-direction: row;
+        width: auto;
+        height: auto;
     }
 
     /* cart */
