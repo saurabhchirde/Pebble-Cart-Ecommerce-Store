@@ -244,6 +244,16 @@ footer {
     padding-left: 1rem;
 }
 
+.card-price-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-badge {
+    font-size: 0.8rem;
+}
+
 .products>div>div:hover,
 .wishlist>div>div:hover,
 .cart-products>div:hover,
