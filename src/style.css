@@ -26,6 +26,12 @@ body,
     color: var(--sub-title-color);
 }
 
+.desktop-navigation-bar .avatar,
+.mobile-navigation-bar .avatar {
+    margin: 0 0.6rem;
+    cursor: pointer;
+}
+
 .mobile-navigation-bar,
 .mobile-navigation-bar-bottom {
     display: none;
