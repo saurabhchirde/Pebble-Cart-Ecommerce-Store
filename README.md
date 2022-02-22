@@ -1,6 +1,6 @@
 # Pebble Cart
 
-## An E-commerce Store for Photography Enthusiast
+## An E-commerce Store For Photography Enthusiast
 #### - by Saurabh Chirde
  
  <br>
@@ -15,7 +15,7 @@
 ---
 ### Live link : https://pebblecart.netlify.app/
 
-![pebbleCart](https://user-images.githubusercontent.com/92800463/154905370-05c6aee1-0d34-45e4-a50c-ee6b0817f271.gif)
+![pebble-cart](https://user-images.githubusercontent.com/92800463/155144345-75bda656-0e26-4a38-b0c1-bfd782aa3109.gif)
 
 ---
 <br>
