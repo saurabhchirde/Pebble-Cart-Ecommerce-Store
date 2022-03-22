@@ -417,6 +417,10 @@ form > div > button {
   padding: 0 1rem;
 }
 
+.rating-badge {
+  color: var(--text-lighter);
+}
+
 /* wishlist */
 
 .wishlist {
