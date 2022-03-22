@@ -347,9 +347,17 @@ form > div > button {
 }
 
 .single-product-image > img {
-  width: 90%;
+  max-width: 20rem;
   margin: 1rem auto 3rem;
   height: auto;
+}
+
+.single-product-image {
+  min-height: 30rem;
+}
+
+.single-product-detail {
+  height: 30rem;
 }
 
 .single-product-image-options {
