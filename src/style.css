@@ -265,7 +265,7 @@ footer {
   font-size: 0.8rem;
 }
 
-.products > div > a > div:hover,
+.products > div > div:hover,
 .wishlist > div > div:hover,
 .cart-products > div:hover,
 .similar-products > div > div:hover {
@@ -333,7 +333,7 @@ form > div > button {
 /* single product page */
 
 .single-product {
-  width: 80%;
+  max-width: 70rem;
   margin: auto;
 }
 
@@ -391,6 +391,7 @@ form > div > button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--text-lighter);
 }
 
 .product-details-feature div {
@@ -399,6 +400,11 @@ form > div > button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.product-details-feature i {
+  font-size: 1.3rem;
+  margin: 8px;
 }
 
 .product-details-feature p {
@@ -461,7 +467,7 @@ form > div > button {
 }
 
 .hero-categories > a > div,
-.products > div > a > div,
+.products > div > div,
 .wishlist > div > div,
 .cart-item-card,
 .checkout-item-card,
