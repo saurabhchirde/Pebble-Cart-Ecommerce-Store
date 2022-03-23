@@ -429,6 +429,10 @@ form > div > button {
   color: var(--text-lighter);
 }
 
+.product-details-cta > button:nth-child(1) {
+  background-color: transparent;
+}
+
 /* wishlist */
 
 .wishlist {
